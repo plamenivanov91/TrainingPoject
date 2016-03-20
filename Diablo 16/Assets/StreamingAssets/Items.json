@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "title": "Battle Axe",
+    "value": 6,
+    "stackable": false,
+    "slug": "battle_axe"
+  },
+  {
+    "id": 1,
+    "title": "Mana Potion",
+    "value": 2,
+    "stackable": true,
+    "slug": "mana_potion"
+  }
+]

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{4250F7C1-B3CE-8879-4E6D-0D5269EFF550}") = "Diablo 16", "Assembly-CSharp.csproj", "{F54717C0-3BC3-B62B-8F71-A1A58A9B8F0D}"
+EndProject
+Project("{4250F7C1-B3CE-8879-4E6D-0D5269EFF550}") = "Diablo 16", "Assembly-UnityScript.unityproj", "{C19FC11D-70F0-8469-CD55-A4FFB105AB9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F54717C0-3BC3-B62B-8F71-A1A58A9B8F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54717C0-3BC3-B62B-8F71-A1A58A9B8F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54717C0-3BC3-B62B-8F71-A1A58A9B8F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54717C0-3BC3-B62B-8F71-A1A58A9B8F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19FC11D-70F0-8469-CD55-A4FFB105AB9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19FC11D-70F0-8469-CD55-A4FFB105AB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19FC11D-70F0-8469-CD55-A4FFB105AB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19FC11D-70F0-8469-CD55-A4FFB105AB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

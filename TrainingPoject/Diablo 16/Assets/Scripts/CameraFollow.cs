@@ -4,7 +4,6 @@ using System.Collections;
 public class CameraFollow : MonoBehaviour {
 
     public GameObject player;
-	private Rigidbody playerRigidbody;
     private Vector3 offset;
 	private Vector3 desiredPosition;
 	public GameObject cubeObj;
@@ -13,7 +12,6 @@ public class CameraFollow : MonoBehaviour {
 	void Start () {
 		
         offset = transform.position - player.transform.position;
-		playerRigidbody = player.GetComponent<Rigidbody> ();
 
 	}
 

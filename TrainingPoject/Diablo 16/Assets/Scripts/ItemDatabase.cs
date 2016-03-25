@@ -12,7 +12,6 @@ public class ItemDatabase : MonoBehaviour {
 	void Start(){
 		itemData = JsonMapper.ToObject (File.ReadAllText(Application.dataPath + "/StreamingAssets/Items.json"));
 		ConstructItemDatabase ();
-		Debug.Log (database [0].Title);
 	}
 
 	public Item FetchItemById(int id)
@@ -28,7 +27,7 @@ public class ItemDatabase : MonoBehaviour {
 
 		for (int i = 0; i < itemData.Count; i++) {
 			database.Add (new Item ((int)itemData[i]["id"], itemData[i]["title"].ToString(), 
-				(int)itemData[i]["value"], (bool)itemData[i]["stackable"],itemData[i]["slug"].ToString()));
+				(int)itemData[i]["value"], (bool)itemData[i]["stackable"], itemData[i]["description"].ToString(),itemData[i]["slug"].ToString()));
 		}
 
 	}
@@ -41,13 +40,15 @@ public class Item {
 	public int Value {get;set;}
 	public string Slug { get; set; }
 	public bool Stackable { get; set; }
+	public string Description{ get; set; }
 	public Sprite Sprite { get; set; }
 
-	public Item(int id, string title, int value, bool stackable, string slug){
+	public Item(int id, string title, int value, bool stackable, string description, string slug){
 		this.ID = id;
 		this.Title = title;
 		this.Value = value;
 		this.Stackable = stackable;
+		this.Description = description;
 		this.Slug = slug;
 		this.Sprite = Resources.Load<Sprite> ("UIInUse/" + slug);
 	}

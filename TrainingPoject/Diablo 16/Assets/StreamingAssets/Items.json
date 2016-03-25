@@ -4,6 +4,7 @@
     "title": "Battle Axe",
     "value": 6,
     "stackable": false,
+    "description": "Cuts heads",
     "slug": "battle_axe"
   },
   {
@@ -11,6 +12,15 @@
     "title": "Mana Potion",
     "value": 2,
     "stackable": true,
+    "description": "Potion that restores mana",
     "slug": "mana_potion"
+  },
+  {
+    "id": 2,
+    "title": "Wooden Bow",
+    "value": 4,
+    "stackable": false,
+    "description": "Bow made of wood",
+    "slug": "wooden_bow"
   }
 ]

@@ -4,6 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
     public Animator anim;
+	public float movementSpeed = 5f;
     
 	// Use this for initialization
 	void Start () {

@@ -23,7 +23,7 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 	}
 
 	public void OnBeginDrag (PointerEventData eventData)
-	{
+	{	
 		if (item != null) {
 			this.transform.SetParent (this.transform.parent.parent);
 			this.transform.position = eventData.position - offset;

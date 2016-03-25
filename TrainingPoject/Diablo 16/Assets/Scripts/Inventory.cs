@@ -18,13 +18,14 @@ public class Inventory : MonoBehaviour {
 
 	void Start(){
 		database = GetComponent<ItemDatabase> ();
-		slotAmount = 64;
+		slotAmount = 32;
 		inventoryPanel = GameObject.Find ("Inventory Panel");
 		slotPanel = inventoryPanel.transform.FindChild ("Slot Panel").gameObject;
 
 		for (int i = 0; i < slotAmount; i++) {
 			items.Add (new Item ());
 			slots.Add (Instantiate (inventorySlot));
+			slots [i].GetComponent<InventorySlot> ().id = i;
 			slots [i].transform.SetParent (slotPanel.transform);
 		}	
 

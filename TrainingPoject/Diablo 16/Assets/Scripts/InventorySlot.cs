@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
-using System;
 
 public class InventorySlot : MonoBehaviour, IDropHandler {
 	public int id;
@@ -17,12 +16,15 @@ public class InventorySlot : MonoBehaviour, IDropHandler {
 		ItemData droppedItem = eventData.pointerDrag.GetComponent<ItemData> ();
 
 		if (inv.items[id].ID == -1) {
+			
 			inv.items [droppedItem.slot] = new Item ();
 			inv.items [id] = droppedItem.item;
 			droppedItem.slot = id;
+
 		} else{
+			
 			Transform item = this.transform.GetChild (0);
-			item.GetComponent<ItemData> ().slot = droppedItem.slot;
+			item.GetComponent<ItemData> ().slot = droppedItem.slot;	
 			item.transform.SetParent (inv.slots [droppedItem.slot].transform);
 			item.transform.position = inv.slots [droppedItem.slot].transform.position;
 
